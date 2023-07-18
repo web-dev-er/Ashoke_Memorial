@@ -26,6 +26,7 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
 /* 
 ---------------------------------------------
 reset
@@ -455,7 +456,8 @@ Header Style
 }
 
 .header-area .main-nav .logo img {
-  width: 223px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .background-header .main-nav .logo {
@@ -654,6 +656,7 @@ Header Style
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .header-area .main-nav:before {
     display: none;
   }
@@ -663,38 +666,47 @@ Header Style
   .header-area {
     top: 0;
   }
+
   .header-area .main-nav {
     background-color: transparent;
     border-radius: 0px;
   }
+
   .header-area .main-nav .nav {
     height: auto;
     flex-basis: 100%;
   }
+
   .header-area .main-nav .logo {
     position: absolute;
     left: 30px;
     top: 15px;
   }
+
   .background-header .main-nav .logo {
     top: 0px;
   }
+
   .background-header .main-nav .border-button {
     top: 0px !important;
   }
+
   .header-area .main-nav .border-button {
     position: absolute;
     top: 15px;
     right: 70px;
   }
+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #7453fc !important;
     opacity: 1;
   }
+
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
+
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
@@ -702,18 +714,23 @@ Header Style
     box-shadow: none;
     text-align: center;
   }
+
   .header-area .container {
     padding: 0px;
   }
+
   .header-area .logo {
     margin-left: 0px;
   }
+
   .header-area .menu-trigger {
     display: block !important;
   }
+
   .header-area .main-nav {
     overflow: hidden;
   }
+
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -724,16 +741,20 @@ Header Style
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+
   .header-area.header-sticky .nav {
     margin-top: 85px !important;
     text-align: center;
   }
+
   .background-header.header-sticky .nav {
     margin-top: 70px !important;
   }
+
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
+
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
@@ -741,6 +762,7 @@ Header Style
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
@@ -749,10 +771,12 @@ Header Style
     background: #fff !important;
     color: #1e1e1e !important;
   }
+
   .header-area .main-nav .nav li a:hover {
     background: #fff !important;
     color: #7453fc !important;
   }
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
     visibility: inherit;
@@ -765,22 +789,27 @@ Header Style
     height: 0px;
     transition: all 0s;
   }
+
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
     font-weight: 400;
   }
+
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
   }
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     height: auto;
   }
+
   .header-area .main-nav .nav li.has-sub:after {
     color: #3b566e;
     right: 30px;
     font-size: 14px;
     top: 15px;
   }
+
   .header-area .main-nav .nav li.submenu:hover ul,
   .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
@@ -794,7 +823,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../img/school-boys.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -803,6 +832,32 @@ Banner Style
   background-color: #2a2a2a;
 }
 
+.header-text {
+  height: 12vh;
+  backdrop-filter: contrast(0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.main-banner-of-ashok {
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    margin: 1rem 0rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: currentcolor;
+    opacity: 0.8;
+}
+.ashok-img {
+  margin: 0.4rem;
+}
 .main-banner h6 {
   font-size: 30px;
   text-align: left;
@@ -1293,11 +1348,9 @@ Footer Style
 
 footer {
   background: rgb(125, 90, 254);
-  background: linear-gradient(
-    132deg,
-    rgba(125, 90, 254, 1) 25%,
-    rgba(160, 84, 244, 1) 100%
-  );
+  background: linear-gradient(132deg,
+      rgba(125, 90, 254, 1) 25%,
+      rgba(160, 84, 244, 1) 100%);
   text-align: center;
   padding: 25px 0px;
 }
@@ -2116,66 +2169,81 @@ body {
   .main-banner .owl-banner {
     margin-top: 80px;
   }
+
   .categories .item {
     margin-bottom: 35px;
   }
+
   .create-nft .section-heading,
   .currently-market .section-heading {
     text-align: center;
   }
+
   .currently-market-item {
     width: 100%;
   }
+
   .create-nft .section-heading .line-dec,
   .currently-market .section-heading .line-dec {
     margin: 0 auto;
   }
+
   .create-nft .main-button,
   .currently-market .filters {
     text-align: center;
   }
+
   .currently-market .filters {
     margin-bottom: 30px;
     margin-top: -30px;
   }
+
   .create-nft p {
     margin-right: 0px;
   }
+
   .create-nft .first-item:after,
   .create-nft .second-item:after,
   .create-nft .first-item .number,
   .create-nft .second-item .number {
     display: none;
   }
+
   .create-nft .item {
     text-align: center;
     margin-top: 45px;
   }
+
   .discover-items #search-form {
     margin-bottom: 40px;
     margin-top: -30px;
   }
+
   .discover-items #search-form fieldset {
     margin-bottom: 30px;
   }
+
   .top-seller .item h6 {
     font-size: 16px;
   }
+
   .item-details-page .left-image {
     margin-right: 0px;
     margin-bottom: 30px;
   }
+
   .current-bid select {
     float: none;
   }
+
   .author-page .author {
     justify-content: center;
   }
+
   .author-page .right-info {
     margin-left: 0px;
     margin-top: 30px;
   }
 }
 
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
